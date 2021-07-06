@@ -46,7 +46,7 @@ const Home = () => {
 		<div class="main-body">
 			<div class="menu-band">
 				<img src={logo} class="logo"></img>
-				<div class="d-flex">
+				<div class="d-flex align-items-end">
 					<div class={`menu-button ${menuItem === 0 ? 'menu-button-active':''}`} onClick={handleClickMenu(0)}>Home</div>
 					<div class={`menu-button ${menuItem === 1 ? 'menu-button-active':''}`} onClick={handleClickMenu(1)}>MARKETPLACE</div>
 					<div class={`menu-button menu-button-black ${menuItem === 2 ? 'menu-button-active':''}`} onClick={handleClickMenu(2)}>
@@ -64,10 +64,11 @@ const Home = () => {
 					<div class={`menu-button menu-button-yellow ${menuItem === 5 ? 'menu-button-active':''}`} onClick={handleClickMenu(5)}>
 						CONNECT WALLET						
 					</div>
+
 				</div>
 			</div>
-			<div class="main-hero d-flex">
-				<div class="hero-left">
+			<div class="main-hero d-flex row">
+				<div class="hero-left col-sm-12 col-md-6">
 					<div class="Own-The-Best-Rule-T">
 						<div >
 							Own The 
@@ -99,7 +100,7 @@ const Home = () => {
 						<span class="VERIFIED-players">VERIFIED players</span> 				
 					</div>
 				</div>
-				<div class="hero-img">
+				<div class="hero-img col-sm-12 col-md-6" >
 					<img src={hero} class="player-cards"></img>
 				</div>
 			</div>
